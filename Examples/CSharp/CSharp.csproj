@@ -10,6 +10,7 @@
 		<ErrorReport>prompt</ErrorReport>
 		<WarningLevel>4</WarningLevel>
 		<OutputPath>..\build\$(Configuration)\</OutputPath>
+		<TargetFramework>net6.0</TargetFramework>
 	</PropertyGroup>
 	
 	<!--Build type section-->
@@ -34,17 +35,17 @@
 	
 	<!--Reference to Aspose libraries, required for examples-->
 	<ItemGroup>
-		<PackageReference Include="Aspose.BarCode" Version="22.5.0.0" />
-		<PackageReference Include="Aspose.Cells" Version="22.5.0.0" />
-		<PackageReference Include="Aspose.PDF" Version="22.5.0.0" />
-		<PackageReference Include="Aspose.Words" Version="22.5.0.0" />
-		<PackageReference Include="Aspose.Imaging" Version="22.5.0.0" />
+		<PackageReference Include="Aspose.BarCode" Version="23.7.0" />
+		<PackageReference Include="Aspose.Cells" Version="23.7.0" />
+		<PackageReference Include="Aspose.PDF" Version="23.7.0" />
+		<PackageReference Include="Aspose.Words" Version="23.7.0" />
+		<PackageReference Include="Aspose.Imaging" Version="23.7.0" />
 	</ItemGroup>	
 	
 	<!--Reference to .Net Core libraries, required for examples-->
 	<ItemGroup Condition="$(DefineConstants.Contains(NETCOREAPP))">
-		<PackageReference Include="System.Drawing.Common" Version="5.0.2" />
-		<PackageReference Include="SkiaSharp.Views.Desktop.Common" Version="2.80.0" />
-		<PackageReference Include="System.Data.SqlClient" Version="4.8.0" />
+		<PackageReference Include="System.Drawing.Common" Version="7.0.0" />
+		<PackageReference Include="SkiaSharp.Views.Desktop.Common" Version="2.88.5" />
+		<PackageReference Include="System.Data.SqlClient" Version="4.8.5" />
 	</ItemGroup>	
 </Project>
